@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   margin: 2% 0%;
+  display: flex;
 }
 
 .inputs{
@@ -14,7 +15,8 @@
 }
 .main-flex{
   display: flex;
-  height:76px
+  height:80px;
+  padding-top:3%
 }
 .field-inputs{
   width:150px;
@@ -23,5 +25,30 @@
   width:100px;
 }
 .input-range{
-  width: 90% !important;
+  width: 80% !important;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+.table-1{
+  width:25%;
+}
+.table-2{
+  width: 75%;
+}
+
+/* .App div{
+  overflow: scroll;
+} */
+.App .div-2{
+  overflow: scroll;
+}
+tr{
+  height: 80px !important;
+}
+.table td, .table th{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+::-webkit-scrollbar { 
+  display: none; 
 }
