@@ -1,14 +1,16 @@
 import React from "react";
 import data from "./data";
-import Slider from "react-rangeslider";
+
 import "react-rangeslider/lib/index.css";
 import "./App.css";
-
+import "react-input-range/lib/css/index.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
-import { MDBTable, MDBTableBody, MDBTableHead } from "mdbreact";
+import InputRange from "react-input-range";
+
+import { MDBTable, MDBTableBody } from "mdbreact";
 
 class App extends React.Component {
   state = {
@@ -18,17 +20,18 @@ class App extends React.Component {
     search: "",
     search2: "",
     search3: "",
-    search4: 0,
+    search4: { min: 0, max: 0 },
     search5: "",
     search6: "",
-    search7: 0,
+    search7: { min: 0, max: 0 },
     search8: "",
     search9: "",
     search10: "",
     search11: "",
     search12: "",
     search13: "",
-    search14: ""
+    search14: "",
+    search15: ""
   };
 
   componentDidMount() {
@@ -92,9 +95,12 @@ class App extends React.Component {
           return item;
         }
       });
-      if (this.state.search4 > 0) {
+      if (this.state.search4.max > 0) {
         filteredData = filteredData.filter(item => {
-          if (Number(item[4]) < this.state.search4) {
+          if (
+            Number(item[4]) >= this.state.search4.min &&
+            Number(item[4]) <= this.state.search4.max
+          ) {
             return item;
           }
         });
@@ -115,9 +121,12 @@ class App extends React.Component {
           return item;
         }
       });
-      if (this.state.search7 > 0) {
+      if (this.state.search7.max > 0) {
         filteredData = filteredData.filter(item => {
-          if (Number(item[7]) < this.state.search7) {
+          if (
+            Number(item[7]) >= this.state.search7.min &&
+            Number(item[7]) <= this.state.search7.max
+          ) {
             return item;
           }
         });
@@ -178,6 +187,14 @@ class App extends React.Component {
           return item;
         }
       });
+      filteredData = filteredData.filter(item => {
+        if (
+          item[15].toLowerCase().includes(this.state.search15) ||
+          item[15].toUpperCase().includes(this.state.search15)
+        ) {
+          return item;
+        }
+      });
 
       // GETTING LARGEST VALUES FOR SLIERS HERE
       filtForMax1 = this.state.data.map(a => {
@@ -196,197 +213,49 @@ class App extends React.Component {
       });
     }
     return (
-      <div className="App" style={{display:"flex", flexDirection:"row"}}>
-        <MDBTable>
+      <div className="App">
+        <h1>Advanced Filter</h1>
+
+        <MDBTable bordered striped>
           {filteredData ? (
             <MDBTableBody>
-              <tr>
-                <th scope="col">{this.state.fields[0]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search0: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[1]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[2]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search2: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[3]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search3: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[4]}</th>
-                <td>
-                  <Slider
-                    value={this.state.search4}
-                    orientation="horizontal"
-                    onChange={this.handleOnChangeSlider1}
-                    max={max1}
-                    min={0}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[5]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search5: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[6]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search6: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[7]}</th>
-                <td>
-                  <Slider
-                    value={this.state.search7}
-                    orientation="horizontal"
-                    onChange={v => {
-                      this.handleOnChangeSlider2(v);
-                    }}
-                    max={max2}
-                    min={0}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[8]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search8: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[9]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search9: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[10]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search10: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[11]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search11: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[12]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search12: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[13]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search13: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="col">{this.state.fields[14]}</th>
-                <td>
-                  <input
-                    onChange={val => {
-                      this.setState({ search14: val.target.value });
-                    }}
-                  />
-                </td>
-              </tr>
-            </MDBTableBody>
-          ) : null}
-        </MDBTable>
-        <MDBTable>
-          {filteredData ? (
-            <MDBTableBody>
-              <tr>
+              <tr style={{ width: "100% !important" }}>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[0]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search0: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
-                    <th key={ind} scope="col">
+                    <td key={ind} scope="col">
                       {val[0]}
-                    </th>
+                    </td>
                   );
                 })}
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[1]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -397,6 +266,20 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[2]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search2: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
+
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -407,6 +290,20 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[3]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search3: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
+
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -417,6 +314,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[4]}
+                  </span>
+                  <span className="field-inputs">
+                    <InputRange
+                      maxValue={max1}
+                      minValue={0}
+                      value={this.state.search4}
+                      onChange={search4 => this.setState({ search4 })}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -427,6 +337,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[5]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search5: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -437,6 +360,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[6]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search6: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -447,6 +383,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[7]}
+                  </span>
+                  <span className="field-inputs">
+                    <InputRange
+                      maxValue={max2}
+                      minValue={0}
+                      value={this.state.search7}
+                      onChange={search7 => this.setState({ search7 })}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -457,6 +406,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[8]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search8: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -467,6 +429,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[9]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search9: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -477,6 +452,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[10]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search10: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -487,6 +475,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[11]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search11: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -497,6 +498,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[12]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search12: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -507,6 +521,19 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[13]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search13: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
@@ -517,10 +544,46 @@ class App extends React.Component {
               </tr>
 
               <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[14]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search14: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
                 {filteredData.map((val, ind) => {
                   return (
                     <td key={ind} scope="col">
                       {val[14]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                <span className="main-flex">
+                  <span className="field-names" scope="col">
+                    {this.state.fields[15]}
+                  </span>
+                  <span className="field-inputs">
+                    <input
+                      className="inputs"
+                      onChange={val => {
+                        this.setState({ search15: val.target.value });
+                      }}
+                    />
+                  </span>
+                </span>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[15]}
                     </td>
                   );
                 })}

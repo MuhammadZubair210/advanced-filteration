@@ -1,22 +1,27 @@
 .App {
   text-align: center;
+  margin: 2% 0%;
 }
 
-.App-logo {
-  height: 40vmin;
+.inputs{
+  border:1px solid;
+  border-radius: 5px;
+  width: 130px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table.table th{
+  width: 10px !important;
+}
+.main-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:76px
 }
-
-.App-link {
-  color: #09d3ac;
+.field-inputs{
+  width:150px;
+}
+.field-names{
+  width:100px;
+}
+.input-range{
+  width: 90% !important;
 }
