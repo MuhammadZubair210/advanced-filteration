@@ -4,6 +4,12 @@ import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import "./App.css";
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+
+import { MDBTable, MDBTableBody, MDBTableHead } from "mdbreact";
+
 class App extends React.Component {
   state = {
     data: null,
@@ -190,10 +196,10 @@ class App extends React.Component {
       });
     }
     return (
-      <div className="App">
-        <table className="table">
+      <div className="App" style={{display:"flex", flexDirection:"row"}}>
+        <MDBTable>
           {filteredData ? (
-            <tbody>
+            <MDBTableBody>
               <tr>
                 <th scope="col">{this.state.fields[0]}</th>
                 <td>
@@ -203,13 +209,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[0]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -221,13 +220,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[1]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -239,13 +231,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[2]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -257,13 +242,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[3]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -277,13 +255,6 @@ class App extends React.Component {
                     min={0}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[4]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -295,13 +266,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[5]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -313,13 +277,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[6]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -335,13 +292,6 @@ class App extends React.Component {
                     min={0}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[7]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -353,13 +303,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[8]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -371,13 +314,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[9]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -389,13 +325,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[10]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -407,13 +336,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[11]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -425,13 +347,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[12]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -443,13 +358,6 @@ class App extends React.Component {
                     }}
                   />
                 </td>
-                {filteredData.map((val, ind) => {
-                  return (
-                    <th key={ind} scope="col">
-                      {val[13]}
-                    </th>
-                  );
-                })}
               </tr>
 
               <tr>
@@ -461,17 +369,165 @@ class App extends React.Component {
                     }}
                   />
                 </td>
+              </tr>
+            </MDBTableBody>
+          ) : null}
+        </MDBTable>
+        <MDBTable>
+          {filteredData ? (
+            <MDBTableBody>
+              <tr>
                 {filteredData.map((val, ind) => {
                   return (
                     <th key={ind} scope="col">
-                      {val[14]}
+                      {val[0]}
                     </th>
                   );
                 })}
               </tr>
-            </tbody>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[1]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[2]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[3]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[4]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[5]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[6]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[7]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[8]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[9]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[10]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[11]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[12]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[13]}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                {filteredData.map((val, ind) => {
+                  return (
+                    <td key={ind} scope="col">
+                      {val[14]}
+                    </td>
+                  );
+                })}
+              </tr>
+            </MDBTableBody>
           ) : null}
-        </table>
+        </MDBTable>
       </div>
     );
   }
