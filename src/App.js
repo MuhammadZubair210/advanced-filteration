@@ -3,11 +3,6 @@ import data from "./data";
 import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import "./App.css";
-// import '@fortawesome/fontawesome-free/css/all.min.css';
-// import 'bootstrap-css-only/css/bootstrap.min.css';
-// import 'mdbreact/dist/css/mdb.css';
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
-
 
 class App extends React.Component {
   state = {
