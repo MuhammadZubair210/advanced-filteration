@@ -23,6 +23,7 @@
 }
 .field-names{
   width:100px;
+  font-weight: bold;
 }
 .input-range{
   width: 80% !important;
@@ -36,9 +37,6 @@
   width: 75%;
 }
 
-/* .App div{
-  overflow: scroll;
-} */
 .App .div-2{
   overflow: scroll;
 }
@@ -51,4 +49,7 @@ tr{
 }
 ::-webkit-scrollbar { 
   display: none; 
+}
+.hide{
+  display: none;
 }

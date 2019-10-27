@@ -10,7 +10,7 @@ import "mdbreact/dist/css/mdb.css";
 
 import InputRange from "react-input-range";
 
-import { MDBTable, MDBTableBody } from "mdbreact";
+import { MDBTable, MDBTableBody, MDBBtn } from "mdbreact";
 
 class App extends React.Component {
   state = {
@@ -31,7 +31,8 @@ class App extends React.Component {
     search12: "",
     search13: "",
     search14: "",
-    search15: ""
+    search15: "",
+    showFilter: true
   };
 
   componentDidMount() {
@@ -212,15 +213,26 @@ class App extends React.Component {
         return Math.max(a, b);
       });
     }
+
     return (
+      <div>
+      <div>
+      <MDBBtn
+      color="primary"
+      onClick={() => {
+        this.setState({ showFilter: !this.state.showFilter });
+      }}
+      >
+      {this.state.showFilter ? "Hide Filters" : "Show Filters"}
+      </MDBBtn>
+      </div>
       <div className="App">
         <div>
-          <MDBTable bordered striped className="table-1">
+        <MDBTable bordered striped className="table-1">
             {filteredData ? (
               <div
                 style={{
                   display: "flex"
-                  // padding-top: 10%;
                 }}
               >
                 <MDBTableBody>
@@ -229,7 +241,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[1]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -245,7 +261,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[2]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -260,7 +280,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[3]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -275,7 +299,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[4]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <InputRange
                           maxValue={max1}
                           minValue={0}
@@ -290,7 +318,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[5]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -305,7 +337,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[6]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -320,7 +356,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[7]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <InputRange
                           maxValue={max2}
                           minValue={0}
@@ -336,7 +376,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[8]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -351,7 +395,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[9]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -363,11 +411,15 @@ class App extends React.Component {
                   </tr>
 
                   <tr>
-                    <span className="main-flex">
+                    <span className="main-flex" onClick={()=>{}}>
                       <span className="field-names" scope="col">
                         {this.state.fields[10]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -382,7 +434,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[11]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -398,7 +454,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[12]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -414,7 +474,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[13]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -430,7 +494,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[14]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -446,7 +514,11 @@ class App extends React.Component {
                       <span className="field-names" scope="col">
                         {this.state.fields[15]}
                       </span>
-                      <span className="field-inputs">
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
                         <input
                           className="inputs"
                           onChange={val => {
@@ -480,9 +552,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                        {val[1].length > 14 ? val[1].slice(0, 14)+"..." : val[1]}
-
+                        <td style={{cursor:"pointer"}} key={ind} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[1].length > 14
+                            ? val[1].slice(0, 14) + "..."
+                            : val[1]}
                         </td>
                       );
                     })}
@@ -490,18 +563,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[2].length > 14 ? val[2].slice(0, 14)+"..." : val[2]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} scope="col">
-                          {val[3]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[2].length > 14
+                            ? val[2].slice(0, 14) + "..."
+                            : val[2]}
                         </td>
                       );
                     })}
@@ -510,8 +575,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[4]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[3].length > 14
+                            ? val[3].slice(0, 14) + "..."
+                            : val[3]}
                         </td>
                       );
                     })}
@@ -520,8 +587,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[5].length > 14 ? val[5].slice(0, 14)+"..." : val[5]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[4].length > 14
+                            ? val[4].slice(0, 14) + "..."
+                            : val[4]}
                         </td>
                       );
                     })}
@@ -530,8 +599,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[6]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[5].length > 14
+                            ? val[5].slice(0, 14) + "..."
+                            : val[5]}
                         </td>
                       );
                     })}
@@ -540,8 +611,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[7]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[6].length > 14
+                            ? val[6].slice(0, 14) + "..."
+                            : val[6]}
                         </td>
                       );
                     })}
@@ -550,8 +623,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[8]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[7].length > 14
+                            ? val[7].slice(0, 14) + "..."
+                            : val[7]}
                         </td>
                       );
                     })}
@@ -560,8 +635,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[9]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[8].length > 14
+                            ? val[8].slice(0, 14) + "..."
+                            : val[8]}
                         </td>
                       );
                     })}
@@ -570,8 +647,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[10]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[9].length > 14
+                            ? val[9].slice(0, 14) + "..."
+                            : val[9]}
                         </td>
                       );
                     })}
@@ -580,8 +659,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[11]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[10].length > 14
+                            ? val[10].slice(0, 14) + "..."
+                            : val[10]}
                         </td>
                       );
                     })}
@@ -590,8 +671,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[12]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[11].length > 14
+                            ? val[11].slice(0, 14) + "..."
+                            : val[11]}
                         </td>
                       );
                     })}
@@ -600,8 +683,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[13]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[12].length > 14
+                            ? val[12].slice(0, 14) + "..."
+                            : val[12]}
                         </td>
                       );
                     })}
@@ -610,8 +695,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[14]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[13].length > 14
+                            ? val[13].slice(0, 14) + "..."
+                            : val[13]}
                         </td>
                       );
                     })}
@@ -620,8 +707,22 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} scope="col">
-                          {val[15]}
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[14].length > 14
+                            ? val[14].slice(0, 14) + "..."
+                            : val[14]}
+                        </td>
+                      );
+                    })}
+                  </tr>
+
+                  <tr>
+                    {filteredData.map((val, ind) => {
+                      return (
+                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
+                          {val[15].length > 14
+                            ? val[15].slice(0, 14) + "..."
+                            : val[15]}
                         </td>
                       );
                     })}
@@ -632,362 +733,9 @@ class App extends React.Component {
           </MDBTable>
         </div>
       </div>
+      </div>
     );
   }
 }
 
 export default App;
-
-// {val[5].length >14 ? val[5].slice(0,14):val[5]}
-
-// <MDBTable bordered striped>
-//   <MDBTableBody
-//     style={{
-//       position: "relative",
-//       left: "250px"
-//     }}
-//   >
-//     <tr>
-//       {filteredData.map((val, ind) => {
-//         return (
-//           <td key={ind} scope="col">
-//             {val[1]}
-//           </td>
-//         );
-//       })}
-//     </tr>
-//     {filteredData.map((val, ind) => {
-//       return (
-//         <td key={ind} scope="col">
-//           {val[2]}
-//         </td>
-//       );
-//     })}
-//   </MDBTableBody>
-// </MDBTable>
-
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[2]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search2: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[2]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[3]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search3: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[3]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[4]}
-//     </span>
-//     <span className="field-inputs">
-//       <InputRange
-//         maxValue={max1}
-//         minValue={0}
-//         value={this.state.search4}
-//         onChange={search4 => this.setState({ search4 })}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[4]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[5]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search5: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[5]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[6]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search6: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[6]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[7]}
-//     </span>
-//     <span className="field-inputs">
-//       <InputRange
-//         maxValue={max2}
-//         minValue={0}
-//         value={this.state.search7}
-//         onChange={search7 => this.setState({ search7 })}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[7]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[8]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search8: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[8]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[9]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search9: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[9]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[10]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search10: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[10]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[11]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search11: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[11]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[12]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search12: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[12]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[13]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search13: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[13]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[14]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search14: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[14]}
-//       </td>
-//     );
-//   })}
-// </tr>
-
-// <tr>
-//   <span className="main-flex">
-//     <span className="field-names" scope="col">
-//       {this.state.fields[15]}
-//     </span>
-//     <span className="field-inputs">
-//       <input
-//         className="inputs"
-//         onChange={val => {
-//           this.setState({ search15: val.target.value });
-//         }}
-//       />
-//     </span>
-//   </span>
-//   {filteredData.map((val, ind) => {
-//     return (
-//       <td key={ind} scope="col">
-//         {val[15]}
-//       </td>
-//     );
-//   })}
-// </tr>
