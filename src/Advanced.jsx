@@ -22,7 +22,7 @@ export default function DisplayAdvanced() {
           <Typography>Choose AMI</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-        </ExpansionPanelDetails>
+          </ExpansionPanelDetails>
       </ExpansionPanel>
 
       <ExpansionPanel>
