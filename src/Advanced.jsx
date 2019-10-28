@@ -24,6 +24,7 @@ export default function DisplayAdvanced() {
         <ExpansionPanelDetails>
             </ExpansionPanelDetails>
       </ExpansionPanel>
+      
 
 
       <ExpansionPanel>
