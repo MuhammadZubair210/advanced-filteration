@@ -22,7 +22,6 @@ export default function DisplayAdvanced() {
           <Typography>Choose AMI</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          {/* <ChooseAMI /> */}
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
