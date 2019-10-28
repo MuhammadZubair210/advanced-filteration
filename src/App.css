@@ -24,6 +24,7 @@
 .field-names{
   width:100px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 .input-range{
   width: 80% !important;

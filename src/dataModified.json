@@ -1,0 +1,2146 @@
+[
+  {
+    "instanceType": "t3a.nano",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "0.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.nano",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "0.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.5300111"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.nano",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 1,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "0.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low",
+    "processorArchitecture": "32-bit or 64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.micro",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "1 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "5030303.00728937897370"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.micro",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "1 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.micro",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 1,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "1 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "32-bit or 64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.small",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "2 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.small",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "2 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.small",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 1,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "2 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "32-bit or 64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.medium",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "4 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.medium",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "4 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "5032308420938409238409230303.00728937897370"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.medium",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "4 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "32-bit or 64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.large",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.large",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.large",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.large",
+    "family": "Compute Instance",
+    "ecu": "9",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "4 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.large",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Low to Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.large",
+    "family": "Compute Instance",
+    "ecu": "8",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c4.large",
+    "family": "Compute Instance",
+    "ecu": "8",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon E5-2666 v3 (Haswell)",
+    "memory": "3.75 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5d.large",
+    "family": "Compute Instance",
+    "ecu": "9",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "4 GiB",
+    "instanceStorage": "1 x 50 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.large",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "8 GiB",
+    "instanceStorage": "1 x 75 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.large",
+    "family": "Compute Instance",
+    "ecu": "8",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "8 GiB",
+    "instanceStorage": "1 x 75 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.large",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.large",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 2,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 75 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.large",
+    "family": "Compute Instance",
+    "ecu": "10",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 75 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 4,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3.large",
+    "family": "Compute Instance",
+    "ecu": "7",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "15.25 GiB",
+    "instanceStorage": "1 x 475 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 4,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.xlarge",
+    "family": "Compute Instance",
+    "ecu": "17",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "8 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "z1d.large",
+    "family": "Compute Instance",
+    "ecu": "15",
+    "vcpu": 2,
+    "physicalProcessor": "Intel Xeon Platinum 8151",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 75 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.xlarge",
+    "family": "Compute Instance",
+    "ecu": "16",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c4.xlarge",
+    "family": "Compute Instance",
+    "ecu": "16",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon E5-2666 v3 (Haswell)",
+    "memory": "7.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 4,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 150 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5d.xlarge",
+    "family": "Compute Instance",
+    "ecu": "17",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "8 GiB",
+    "instanceStorage": "1 x 100 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m4.xlarge",
+    "family": "Compute Instance",
+    "ecu": "13",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon E5-2676 v3 (Haswell)",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 4,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.xlarge",
+    "family": "Compute Instance",
+    "ecu": "16",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 150 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.xlarge",
+    "family": "Compute Instance",
+    "ecu": "19",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 4,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "32 GiB",
+    "instanceStorage": "1 x 150 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3a.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 8,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r4.xlarge",
+    "family": "Compute Instance",
+    "ecu": "13.5",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "30.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.xlarge",
+    "family": "Compute Instance",
+    "ecu": "19",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "32 GiB",
+    "instanceStorage": "1 x 150 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t3.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Skylake E5 2686 v5 (2.5 GHz)",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "34",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "16 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "t2.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "Variable",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 8,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "31",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5d.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "34",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "16 GiB",
+    "instanceStorage": "1 x 200 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "z1d.xlarge",
+    "family": "Compute Instance",
+    "ecu": "28",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Platinum 8151",
+    "memory": "32 GiB",
+    "instanceStorage": "1 x 150 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c4.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "31",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon E5-2666 v3 (Haswell)",
+    "memory": "15 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 8,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "32 GiB",
+    "instanceStorage": "1 x 300 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 8,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "64 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 8,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "64 GiB",
+    "instanceStorage": "1 x 300 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "38",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "64 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g4dn.xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "16 GiB",
+    "instanceStorage": "125 GB NVMe SSD",
+    "networkPerformance": "Up to 25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "38",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "64 GiB",
+    "instanceStorage": "1 x 300 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "d2.xlarge",
+    "family": "Compute Instance",
+    "ecu": "14",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon E5-2676v3 (Haswell)",
+    "memory": "30.5 GiB",
+    "instanceStorage": "3 x 2000 HDD",
+    "networkPerformance": "Moderate",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 16,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "64 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "68",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "32 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "z1d.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "53",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8151",
+    "memory": "64 GiB",
+    "instanceStorage": "1 x 300 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "60",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "64 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m4.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "53.5",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon E5-2676 v3 (Haswell)",
+    "memory": "64 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g3s.xlarge",
+    "family": "Compute Instance",
+    "ecu": "13",
+    "vcpu": 4,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "30.5 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c4.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "62",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon E5-2666 v3 (Haswell)",
+    "memory": "30 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 16,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "64 GiB",
+    "instanceStorage": "2 x 300 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "64 GiB",
+    "instanceStorage": "2 x 2500 NVMe SSD",
+    "networkPerformance": "Up to 25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 16,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "128 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r4.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "53",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "122 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "71",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "128 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 16,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "128 GiB",
+    "instanceStorage": "2 x 300 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "z1d.3xlarge",
+    "family": "Compute Instance",
+    "ecu": "75",
+    "vcpu": 12,
+    "physicalProcessor": "Intel Xeon Platinum 8151",
+    "memory": "96 GiB",
+    "instanceStorage": "1 x 450 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g3.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "47",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "122 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "53",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "122 GiB",
+    "instanceStorage": "2 x 1900 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g4dn.4xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 16,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "64 GiB",
+    "instanceStorage": "225 GB NVMe SSD",
+    "networkPerformance": "Up to 25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.3xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 12,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "96 GiB",
+    "instanceStorage": "1 x 7500 NVMe SSD",
+    "networkPerformance": "Up to 25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 32,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "128 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "131",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "128 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c4.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "132",
+    "vcpu": 36,
+    "physicalProcessor": "Intel Xeon E5-2666 v3 (Haswell)",
+    "memory": "60 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.9xlarge",
+    "family": "Compute Instance",
+    "ecu": "141",
+    "vcpu": 36,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "72 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 32,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "128 GiB",
+    "instanceStorage": "2 x 600 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "131",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "128 GiB",
+    "instanceStorage": "2 x 600 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 32,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "256 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "131",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "256 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 32,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "256 GiB",
+    "instanceStorage": "2 x 600 NVMe SSD",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g4dn.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "128 GiB",
+    "instanceStorage": "900 GB NVMe SSD",
+    "networkPerformance": "50 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "192 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "188",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Platinum 8275L",
+    "memory": "96 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "12 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "131",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "256 GiB",
+    "instanceStorage": "2 x 600 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r4.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "99",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "244 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g3.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "94",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "244 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "192 GiB",
+    "instanceStorage": "2 x 900 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "173",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "192 GiB",
+    "instanceStorage": "2 x 900 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "99",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "244 GiB",
+    "instanceStorage": "4 x 1900 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "384 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 64,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "256 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "12 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.6xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 24,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "192 GiB",
+    "instanceStorage": "2 x 7500 NVMe SSD",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.18xlarge",
+    "family": "Compute Instance",
+    "ecu": "281",
+    "vcpu": 72,
+    "physicalProcessor": "Intel Xeon Platinum 8124M",
+    "memory": "144 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m4.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "188",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "256 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "173",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "384 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "262",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "256 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "p3.2xlarge",
+    "family": "Compute Instance",
+    "ecu": "26",
+    "vcpu": 8,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "61 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "Up to 10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "384 GiB",
+    "instanceStorage": "2 x 900 NVMe SSD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 64,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "256 GiB",
+    "instanceStorage": "4 x 600 NVMe SSD",
+    "networkPerformance": "12 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "262",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "256 GiB",
+    "instanceStorage": "4 x 600 NVMe SSD",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 64,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "512 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "12 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5a.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "384 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.metal",
+    "family": "Compute Instance",
+    "ecu": "375",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8275L",
+    "memory": "192 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g4dn.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Family",
+    "memory": "192 GiB",
+    "instanceStorage": "900 GB NVMe SSD",
+    "networkPerformance": "50 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r4.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "195",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "488 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "262",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "512 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "c5.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "375",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8275L",
+    "memory": "192 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 64,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "512 GiB",
+    "instanceStorage": "4 x 600 NVMe SSD",
+    "networkPerformance": "12 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "z1d.metal",
+    "family": "Compute Instance (bare metal)",
+    "ecu": "271",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Platinum 8151",
+    "memory": "384 GiB",
+    "instanceStorage": "2 x 900 NVMe SSD",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "345",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "384 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5.metal",
+    "family": "Compute Instance",
+    "ecu": "345",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "384 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "g3.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "188",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "488 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "262",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "512 GiB",
+    "instanceStorage": "4 x 600 NVMe SSD",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "200",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "488 GiB",
+    "instanceStorage": "8 x 1900 NVMe SSD",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5ad.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "384 GiB",
+    "instanceStorage": "4 x 900 NVMe SSD",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "d2.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "116",
+    "vcpu": 36,
+    "physicalProcessor": "Intel Xeon E5-2676v3 (Haswell)",
+    "memory": "244 GiB",
+    "instanceStorage": "24 x 2000 HDD",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "m5d.metal",
+    "family": "Compute Instance",
+    "ecu": "345",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "384 GiB",
+    "instanceStorage": "4 x 900 NVMe SSD",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5a.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "768 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.12xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 48,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "384 GiB",
+    "instanceStorage": "4 x 7500 NVMe SSD",
+    "networkPerformance": "50 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "347",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "768 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5.metal",
+    "family": "Compute Instance (bare metal)",
+    "ecu": "347",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "768 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5ad.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "AMD EPYC 7571",
+    "memory": "768 GiB",
+    "instanceStorage": "4 x 900 NVMe SSD",
+    "networkPerformance": "20 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "r5d.metal",
+    "family": "Compute Instance (bare metal)",
+    "ecu": "347",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "768 GiB",
+    "instanceStorage": "4 x 900 NVMe SSD",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.24xlarge",
+    "family": "Compute Instance",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "768 GiB",
+    "instanceStorage": "8 x 7500 NVMe SSD",
+    "networkPerformance": "100 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "i3en.metal",
+    "family": "Compute Instance (bare metal)",
+    "ecu": "NA",
+    "vcpu": 96,
+    "physicalProcessor": "Intel Xeon Platinum 8175",
+    "memory": "768 GiB",
+    "instanceStorage": "8 x 7500 NVMe SSD",
+    "networkPerformance": "100 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "p3.8xlarge",
+    "family": "Compute Instance",
+    "ecu": "94",
+    "vcpu": 32,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "244 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "10 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "x1.32xlarge",
+    "family": "Compute Instance",
+    "ecu": "349",
+    "vcpu": 128,
+    "physicalProcessor": "High Frequency Intel Xeon E7-8880 v3 (Haswell)",
+    "memory": "1,952 GiB",
+    "instanceStorage": "2 x 1920 SSD",
+    "networkPerformance": "High",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  },
+  {
+    "instanceType": "p3.16xlarge",
+    "family": "Compute Instance",
+    "ecu": "188",
+    "vcpu": 64,
+    "physicalProcessor": "Intel Xeon E5-2686 v4 (Broadwell)",
+    "memory": "488 GiB",
+    "instanceStorage": "EBS only",
+    "networkPerformance": "25 Gigabit",
+    "processorArchitecture": "64-bit",
+    "onDemandHourlyPrice": {
+      "currency": "USD",
+      "value": "0.000"
+    },
+    "select": ""
+  }
+]

@@ -1,6 +1,5 @@
 import React from "react";
-import data from "./data";
-
+import dataModified from "./dataModified"
 import "react-rangeslider/lib/index.css";
 import "./App.css";
 import "react-input-range/lib/css/index.css";
@@ -19,11 +18,11 @@ class App extends React.Component {
     search0: "",
     search: "",
     search2: "",
-    search3: "",
-    search4: { min: 0, max: 0 },
+    search4: "",
+    search3: { min: 0, max: 0 },
     search5: "",
     search6: "",
-    search7: { min: 0, max: 0 },
+    search7: "",
     search8: "",
     search9: "",
     search10: "",
@@ -36,44 +35,30 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({ fields: data.fields, data: data.data });
+    this.setState({ data: dataModified });
   }
 
-  handleOnChangeSlider1 = value => {
-    this.setState({
-      search4: value
-    });
-  };
+  getColData = (data) => {
+    console.log(data)
+    alert(JSON.stringify(data))
+  }
 
-  handleOnChangeSlider2 = value => {
-    this.setState({
-      search7: value
-    });
-  };
   render() {
-    let filteredData = null;
-    let max1 = 100;
-    let max2 = 100;
-    let filtForMax1 = [];
-    let filtForMax2 = [];
 
+    let tablePropertyNames = null
+    let max1 = 100;
+    let filteredData = null;
+    let filtForMax1 = [];
+    
     if (this.state.data !== null) {
       const { data } = this.state;
-
+      tablePropertyNames = Object.keys(this.state.data[0]);
+      
       // FILTERING FOR EACH ROW ITEM
       filteredData = data.filter(item => {
         if (
-          item[0].toLowerCase().includes(this.state.search0) ||
-          item[0].toUpperCase().includes(this.state.search0)
-        ) {
-          return item;
-        }
-      });
-
-      filteredData = data.filter(item => {
-        if (
-          item[1].toLowerCase().includes(this.state.search) ||
-          item[1].toUpperCase().includes(this.state.search)
+          item.instanceType.toLowerCase().includes(this.state.search0) ||
+          item.instanceType.toUpperCase().includes(this.state.search0)
         ) {
           return item;
         }
@@ -81,8 +66,8 @@ class App extends React.Component {
 
       filteredData = filteredData.filter(item => {
         if (
-          item[2].toLowerCase().includes(this.state.search2) ||
-          item[2].toUpperCase().includes(this.state.search2)
+          item.family.toLowerCase().includes(this.state.search) ||
+          item.family.toUpperCase().includes(this.state.search)
         ) {
           return item;
         }
@@ -90,17 +75,18 @@ class App extends React.Component {
 
       filteredData = filteredData.filter(item => {
         if (
-          item[3].toLowerCase().includes(this.state.search3) ||
-          item[3].toUpperCase().includes(this.state.search3)
+          item.ecu.toLowerCase().includes(this.state.search2) ||
+          item.ecu.toUpperCase().includes(this.state.search2)
         ) {
           return item;
         }
       });
-      if (this.state.search4.max > 0) {
+
+      if (this.state.search3.max > 0) {
         filteredData = filteredData.filter(item => {
           if (
-            Number(item[4]) >= this.state.search4.min &&
-            Number(item[4]) <= this.state.search4.max
+            Number(item.vcpu) >= this.state.search3.min &&
+            Number(item.vcpu) <= this.state.search3.max
           ) {
             return item;
           }
@@ -108,111 +94,67 @@ class App extends React.Component {
       }
       filteredData = filteredData.filter(item => {
         if (
-          item[5].toLowerCase().includes(this.state.search5) ||
-          item[5].toUpperCase().includes(this.state.search5)
+          item.physicalProcessor.toLowerCase().includes(this.state.search4) ||
+          item.physicalProcessor.toUpperCase().includes(this.state.search4)
         ) {
           return item;
         }
       });
       filteredData = filteredData.filter(item => {
         if (
-          item[6].toLowerCase().includes(this.state.search6) ||
-          item[6].toUpperCase().includes(this.state.search6)
+          item.memory.toLowerCase().includes(this.state.search5) ||
+          item.memory.toUpperCase().includes(this.state.search5)
         ) {
           return item;
         }
       });
-      if (this.state.search7.max > 0) {
+      filteredData = filteredData.filter(item => {
+        if (
+          item.instanceStorage.toLowerCase().includes(this.state.search6) ||
+          item.instanceStorage.toUpperCase().includes(this.state.search6)
+        ) {
+          return item;
+        }
+      });
+      filteredData = filteredData.filter(item => {
+        if (
+          item.networkPerformance.toLowerCase().includes(this.state.search7) ||
+          item.networkPerformance.toUpperCase().includes(this.state.search7)
+        ) {
+          return item;
+        }
+      });
+            filteredData = filteredData.filter(item => {
+        if (
+          item.processorArchitecture.toLowerCase().includes(this.state.search8) ||
+          item.processorArchitecture.toUpperCase().includes(this.state.search8)
+        ) {
+          return item;
+        }
+      });
         filteredData = filteredData.filter(item => {
-          if (
-            Number(item[7]) >= this.state.search7.min &&
-            Number(item[7]) <= this.state.search7.max
-          ) {
-            return item;
-          }
-        });
-      }
-      filteredData = filteredData.filter(item => {
         if (
-          item[8].toLowerCase().includes(this.state.search8) ||
-          item[8].toUpperCase().includes(this.state.search8)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[9].toLowerCase().includes(this.state.search9) ||
-          item[9].toUpperCase().includes(this.state.search9)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[10].toLowerCase().includes(this.state.search10) ||
-          item[10].toUpperCase().includes(this.state.search10)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[11].toLowerCase().includes(this.state.search11) ||
-          item[11].toUpperCase().includes(this.state.search11)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[12].toLowerCase().includes(this.state.search12) ||
-          item[12].toUpperCase().includes(this.state.search12)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[13].toLowerCase().includes(this.state.search13) ||
-          item[13].toUpperCase().includes(this.state.search13)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[14].toLowerCase().includes(this.state.search14) ||
-          item[14].toUpperCase().includes(this.state.search14)
-        ) {
-          return item;
-        }
-      });
-      filteredData = filteredData.filter(item => {
-        if (
-          item[15].toLowerCase().includes(this.state.search15) ||
-          item[15].toUpperCase().includes(this.state.search15)
+          (item.onDemandHourlyPrice.currency || item.onDemandHourlyPrice.value).toLowerCase().includes(this.state.search9) ||
+          (item.onDemandHourlyPrice.currency+" "+ item.onDemandHourlyPrice.value).toLowerCase().includes(this.state.search9) ||
+          (item.onDemandHourlyPrice.currency+" "+ item.onDemandHourlyPrice.value).toUpperCase().includes(this.state.search9) ||
+          (item.onDemandHourlyPrice.currency || item.onDemandHourlyPrice.value).toUpperCase().includes(this.state.search9)
         ) {
           return item;
         }
       });
 
-      // GETTING LARGEST VALUES FOR SLIERS HERE
-      filtForMax1 = this.state.data.map(a => {
-        return a[4];
-      });
-
-      filtForMax2 = this.state.data.map(a => {
-        return a[7];
+      // // GETTING LARGEST VALUES FOR SLIERS HERE
+      filtForMax1 = data.map(a => {
+        return a.vcpu;
       });
 
       max1 = filtForMax1.reduce((a, b) => {
         return Math.max(a, b);
       });
-      max2 = filtForMax2.reduce((a, b) => {
-        return Math.max(a, b);
-      });
+
     }
+    var re = /[\s_]+|([a-z0-9])(?=[A-Z])/g; 
+
 
     return (
       <div>
@@ -236,10 +178,29 @@ class App extends React.Component {
                 }}
               >
                 <MDBTableBody>
+                <tr>
+                    <span className="main-flex" onClick={()=>{}}>
+                      <span className="field-names">
+                        {tablePropertyNames[0].replace(re, "$1 ").toLowerCase()}
+                      </span>
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
+                        <input
+                          className="inputs"
+                          onChange={val => {
+                            this.setState({ search0: val.target.value });
+                          }}
+                        />
+                      </span>
+                    </span>
+                  </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[1]}
+                      <span className="field-names">
+                        {tablePropertyNames[1]}
                       </span>
                       <span
                         className={
@@ -258,8 +219,8 @@ class App extends React.Component {
 
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[2]}
+                      <span className="field-names">
+                        {tablePropertyNames[2]}
                       </span>
                       <span
                         className={
@@ -277,18 +238,38 @@ class App extends React.Component {
                   </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[3]}
+                      <span className="field-names">
+                        {tablePropertyNames[3]}
                       </span>
                       <span
                         className={
                           this.state.showFilter ? "field-inputs" : "hide"
                         }
                       >
-                        <input
+                           <InputRange
+                          maxValue={max1}
+                          minValue={0}
+                          value={this.state.search3}
+                          onChange={search3 => this.setState({ search3 })}
+                        />
+
+                      </span>
+                    </span>
+                  </tr>
+                  <tr>
+                    <span className="main-flex">
+                      <span className="field-names">
+                        {tablePropertyNames[4].replace(re, "$1 ").toLowerCase()}
+                      </span>
+                      <span
+                        className={
+                          this.state.showFilter ? "field-inputs" : "hide"
+                        }
+                      >
+                    <input
                           className="inputs"
                           onChange={val => {
-                            this.setState({ search3: val.target.value });
+                            this.setState({ search4: val.target.value });
                           }}
                         />
                       </span>
@@ -296,27 +277,8 @@ class App extends React.Component {
                   </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[4]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <InputRange
-                          maxValue={max1}
-                          minValue={0}
-                          value={this.state.search4}
-                          onChange={search4 => this.setState({ search4 })}
-                        />
-                      </span>
-                    </span>
-                  </tr>
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[5]}
+                      <span className="field-names">
+                        {tablePropertyNames[5]}
                       </span>
                       <span
                         className={
@@ -334,8 +296,8 @@ class App extends React.Component {
                   </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[6]}
+                      <span className="field-names">
+                        {tablePropertyNames[6].replace(re, "$1 ").toLowerCase()}
                       </span>
                       <span
                         className={
@@ -353,19 +315,19 @@ class App extends React.Component {
                   </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[7]}
+                      <span className="field-names">
+                        {tablePropertyNames[7].replace(re, "$1 ").toLowerCase()}
                       </span>
                       <span
                         className={
                           this.state.showFilter ? "field-inputs" : "hide"
                         }
                       >
-                        <InputRange
-                          maxValue={max2}
-                          minValue={0}
-                          value={this.state.search7}
-                          onChange={search7 => this.setState({ search7 })}
+                     <input
+                          className="inputs"
+                          onChange={val => {
+                            this.setState({ search7: val.target.value });
+                          }}
                         />
                       </span>
                     </span>
@@ -373,8 +335,8 @@ class App extends React.Component {
 
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[8]}
+                      <span className="field-names">
+                        {tablePropertyNames[8].replace(re, "$1 ").toLowerCase()}
                       </span>
                       <span
                         className={
@@ -392,8 +354,8 @@ class App extends React.Component {
                   </tr>
                   <tr>
                     <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[9]}
+                      <span className="field-names">
+                        {tablePropertyNames[9].replace(re, "$1 ").toLowerCase()}
                       </span>
                       <span
                         className={
@@ -412,8 +374,8 @@ class App extends React.Component {
 
                   <tr>
                     <span className="main-flex" onClick={()=>{}}>
-                      <span className="field-names" scope="col">
-                        {this.state.fields[10]}
+                      <span className="field-names">
+                        {tablePropertyNames[10]}
                       </span>
                       <span
                         className={
@@ -429,105 +391,7 @@ class App extends React.Component {
                       </span>
                     </span>
                   </tr>
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[11]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <input
-                          className="inputs"
-                          onChange={val => {
-                            this.setState({ search11: val.target.value });
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </tr>
-
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[12]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <input
-                          className="inputs"
-                          onChange={val => {
-                            this.setState({ search12: val.target.value });
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </tr>
-
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[13]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <input
-                          className="inputs"
-                          onChange={val => {
-                            this.setState({ search13: val.target.value });
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </tr>
-
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[14]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <input
-                          className="inputs"
-                          onChange={val => {
-                            this.setState({ search14: val.target.value });
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </tr>
-
-                  <tr>
-                    <span className="main-flex">
-                      <span className="field-names" scope="col">
-                        {this.state.fields[15]}
-                      </span>
-                      <span
-                        className={
-                          this.state.showFilter ? "field-inputs" : "hide"
-                        }
-                      >
-                        <input
-                          className="inputs"
-                          onChange={val => {
-                            this.setState({ search15: val.target.value });
-                          }}
-                        />
-                      </span>
-                    </span>
-                  </tr>
+                 
                 </MDBTableBody>
               </div>
             ) : null}
@@ -552,21 +416,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td style={{cursor:"pointer"}} key={ind} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[1].length > 14
-                            ? val[1].slice(0, 14) + "..."
-                            : val[1]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[2].length > 14
-                            ? val[2].slice(0, 14) + "..."
-                            : val[2]}
+                        <td style={{cursor:"pointer"}} key={ind} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.instanceType.length > 18
+                            ? val.instanceType.slice(0, 18) + "..."
+                            : val.instanceType}
                         </td>
                       );
                     })}
@@ -575,10 +428,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[3].length > 14
-                            ? val[3].slice(0, 14) + "..."
-                            : val[3]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.family.length > 18
+                            ? val.family.slice(0, 18) + "..."
+                            : val.family}
                         </td>
                       );
                     })}
@@ -587,10 +440,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[4].length > 14
-                            ? val[4].slice(0, 14) + "..."
-                            : val[4]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.ecu.length > 18
+                            ? val.ecu.slice(0, 18) + "..."
+                            : val.ecu}
                         </td>
                       );
                     })}
@@ -599,10 +452,10 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[5].length > 14
-                            ? val[5].slice(0, 14) + "..."
-                            : val[5]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.vcpu.length > 18
+                            ? val.vcpu.slice(0, 18) + "..."
+                            : val.vcpu}
                         </td>
                       );
                     })}
@@ -611,10 +464,23 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[6].length > 14
-                            ? val[6].slice(0, 14) + "..."
-                            : val[6]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.physicalProcessor.length > 18
+                            ? val.physicalProcessor.slice(0, 18) + "..."
+                            : val.physicalProcessor}
+                        </td>
+                      );
+                    })}
+                  </tr>
+
+
+                  <tr>
+                    {filteredData.map((val, ind) => {
+                      return (
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.memory.length > 18
+                            ? val.memory.slice(0, 18) + "..."
+                            : val.memory}
                         </td>
                       );
                     })}
@@ -623,10 +489,21 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[7].length > 14
-                            ? val[7].slice(0, 14) + "..."
-                            : val[7]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.instanceStorage.length > 18
+                            ? val.instanceStorage.slice(0, 18) + "..."
+                            : val.instanceStorage}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                  <tr>
+                    {filteredData.map((val, ind) => {
+                      return (
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.networkPerformance.length > 18
+                            ? val.networkPerformance.slice(0, 18) + "..."
+                            : val.networkPerformance}
                         </td>
                       );
                     })}
@@ -635,10 +512,20 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[8].length > 14
-                            ? val[8].slice(0, 14) + "..."
-                            : val[8]}
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.processorArchitecture.length > 18
+                            ? val.processorArchitecture.slice(0, 18) + "..."
+                            : val.processorArchitecture}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                 
+                  <tr>
+                    {filteredData.map((val, ind) => {
+                      return (
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                          {val.onDemandHourlyPrice.currency} {val.onDemandHourlyPrice.value}
                         </td>
                       );
                     })}
@@ -647,86 +534,15 @@ class App extends React.Component {
                   <tr>
                     {filteredData.map((val, ind) => {
                       return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[9].length > 14
-                            ? val[9].slice(0, 14) + "..."
-                            : val[9]}
-                        </td>
+                        <td key={ind} style={{cursor:"pointer"}} onClick={()=>this.getColData(filteredData[ind])}>
+                        {val.select.length > 18
+                          ? val.processelectsorArchitecture.slice(0, 18) + "..."
+                          : val.select}
+                      </td>
                       );
                     })}
                   </tr>
 
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[10].length > 14
-                            ? val[10].slice(0, 14) + "..."
-                            : val[10]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[11].length > 14
-                            ? val[11].slice(0, 14) + "..."
-                            : val[11]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[12].length > 14
-                            ? val[12].slice(0, 14) + "..."
-                            : val[12]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[13].length > 14
-                            ? val[13].slice(0, 14) + "..."
-                            : val[13]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[14].length > 14
-                            ? val[14].slice(0, 14) + "..."
-                            : val[14]}
-                        </td>
-                      );
-                    })}
-                  </tr>
-
-                  <tr>
-                    {filteredData.map((val, ind) => {
-                      return (
-                        <td key={ind} style={{cursor:"pointer"}} scope="col" onClick={()=>console.log(filteredData[ind])}>
-                          {val[15].length > 14
-                            ? val[15].slice(0, 14) + "..."
-                            : val[15]}
-                        </td>
-                      );
-                    })}
-                  </tr>
                 </MDBTableBody>
               </div>
             ) : null}
@@ -739,3 +555,4 @@ class App extends React.Component {
 }
 
 export default App;
+
