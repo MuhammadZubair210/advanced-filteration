@@ -75,9 +75,10 @@ export default function DisplayAdvanced() {
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </Container>
-    
+
   );
 }
+
 
 
 
