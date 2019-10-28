@@ -24,6 +24,7 @@ export default function DisplayAdvanced() {
         <ExpansionPanelDetails>
             </ExpansionPanelDetails>
       </ExpansionPanel>
+
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="Instance">
           <Typography>Choose Instance Type</Typography>
