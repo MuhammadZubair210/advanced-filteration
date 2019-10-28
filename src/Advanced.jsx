@@ -11,7 +11,6 @@ import Container from '@material-ui/core/Container';
 // import AddTag from './AddTag';
 // import ChooseAMI from './ChooseAMI';
 import ChooseInstanceType from './ChooseInstanceType';
-// import ConfigureSecurityGroup from './ConfigureSecurityGroup';
 import App from './App'
 
 export default function DisplayAdvanced() {
