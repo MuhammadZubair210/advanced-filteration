@@ -380,6 +380,7 @@
   integrity sha512-t0JKGgqk2We+9may3t0xDdmneaXmyxq0xieYcKHxIsrJO64n1OiMWNUtc5gQK1PA0NpdCRrtZp4z+IUaKugrSA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
+    
 
 "@babel/plugin-syntax-optional-catch-binding@^7.2.0":
   version "7.2.0"
